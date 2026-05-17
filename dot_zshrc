@@ -3,7 +3,11 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="agnosterzak"
+# ZSH_THEME="agnosterzak"
+# ZSH_THEME="agnoster"
+
+autoload -U promptinit; promptinit
+prompt pure
 
 plugins=( 
     git
@@ -44,3 +48,14 @@ alias lt='ls --tree'
 alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
 export EDITOR=nvim
 
+export GITLAB_TOKEN=glpat-7VDVqB6sAo9IXWDQLb3ULG86MQp1OjFncmJwCw.01.120f0v021
+
+
+# Added by CodeRabbit CLI installer
+export PATH="/home/satoshi/.local/bin:$PATH"
+
+# add Pulumi to the PATH
+export PATH=$PATH:/home/satoshi/.pulumi/bin
+
+# opencode
+export PATH=/home/satoshi/.opencode/bin:$PATH
